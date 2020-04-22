@@ -22,37 +22,21 @@
                 border-style: unset;
 
             }
-            .url{
-                margin-left: 33%;
-                margin-right: 33%;
-                /* border-style: unset; */
-            }
-            li{
-                font-size: 30px;
-            }
         </style>
     </head>
 
     <body>
         
-        <h1>Name</h1>
+        <h1>Gender</h1>
         <div>
-            <p>name：病人姓名。姓名全名放置於text，以利呈現。數值個數(0…n)，可存在多個姓名，如繁體、簡體、英文的姓名。英文姓名可參考護照姓名，分Last name與First name，分別放入family(姓)與given(名)標籤。中文姓名First name與Last name 放置規格如下:</p>
-            <hr>
-            <p>議題：</p>
-            <p>1.不使用use、prefix、suffix、period 等子欄位</p>
-            <p>2.family 空白，given 放全名規格需進一步確立，並測試 FHIR API搜尋狀況。</p>
-            <p>3.中文特殊字元跨系統互通，在各系統支援之狀況，如可否輸入、查詢、呈現須測試。是否提供測試範例及周全之測試中文字元集。</p>
-            <p>4.回台灣就醫，大陸病歷中之姓名、地址、及文字呈現資訊之簡體中文是否會強制轉為繁體使用。</p>  
+            <p>gender：病人性別。數值個數(0…1)，可不提供，或給定以下數值:male | female | other | unknown</p>
             <hr>
         <h3>Example：</h3>
-        
-
-        <div class="url">
-        <li><a href="https://huang-che-yu.github.io/MITW2020Patient/繁體中文.html">Traditional Chinese</a></li><br>
-        <li><a href="https://huang-che-yu.github.io/MITW2020Patient/簡體中文.html">Simplified Chinese</a></li><br>
-        <li><a href="https://huang-che-yu.github.io/MITW2020Patient/英文.html">English</a></li><br>
-        </div>
+            <pre>
+                {
+                    "gender" ： "male"
+                }
+            </pre>
         <hr>
     </div>
     </body>
