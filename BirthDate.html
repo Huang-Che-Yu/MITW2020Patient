@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Gender</title>
+        <title>BirthDate</title>
         <style>
             h1{
                 font-size: 70px;
@@ -22,14 +22,21 @@
                 border-style: unset;
 
             }
+            li{
+                font-size: 20px;
+            }
         </style>
     </head>
 
     <body>
         
-        <h1>Gender</h1>
+        <h1>BirthDate</h1>
         <div>
-            <p>gender：病人性別。數值個數(0…1)，可不提供，或給定以下數值:male | female | other | unknown</p>
+            <p>birthDate：病人生日。數值個數(0…1)，可不提供，或提供生日，格式:年(西元四碼)-月(兩碼含0)-日(兩碼含0)。</p>
+            <hr>
+            <p>議題：</p>
+            <li>某些應用需曉得病人年齡，又不希望公開病人確定生日，則生日中出生月份及日期可亂數產生，或出生日期可亂數產生。且亂數生成月份及日期，不同於真實生日月份及日期。</li>
+            <br>
             <hr>
         <h3>Example：</h3>
             <pre>
