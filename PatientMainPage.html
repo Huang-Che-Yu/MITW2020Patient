@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>PatientMainPage</title>
+        <title>FHIR Patient</title>
         <style>
             h1{
                 font-size: 50px;
@@ -28,7 +28,7 @@
                font-size: 30px;
             }
             .introduction{
-                font-size: 20px;
+                font-size: 23px;
             }
             .main{
                 margin-left: 20%;
@@ -39,21 +39,20 @@
 
     <body>
         <br>
-        <h1>PatientMainPage</h1>
+        <h1>FHIR Patient</h1>
         <div class="main">
-        <p>應用情境:</p>
-
-	    <li class="introduction">模擬建構巨量人員資料，在各式情境(含健康醫療)之應用。可模擬進行壓力測試，如多人同時上線，訂口罩。</li>
-	    <li class="introduction">紀錄及管理個人帳號: 各機構及 PHR</li>
-        <li class="introduction">提供標準化個資給各式服務系統，如 person 轉資料到 patient，patient 可為:</li>
-            <ol>
-	        <li class="introduction">健康醫療機構所屬病人</li>
-	        <li class="introduction">社區或社團成員(如村里活動報名者、線上活動社群)</li>
-            <li class="introduction">學生(patient = student)</li>    
-            </ol>
-
-        <p>配合各類應情境之增修改查權限管控</p>
-	    <li class="introduction">PHR client 上傳家戶個人資料權限管控</li>
+        
+        <li class="introduction"><b>規範用途：</b></li>
+        <p>本文件參考 FHIR Patient resource標準，考量台灣醫資系統現況，確立病人基本資料之規格，以利於各單位發展標準化系統，互通病人基本資料。</p>
+        <br>
+        <li class="introduction"><b>應用情境及注意事項：</b></li>
+        <p>本文件確立之病人基本資料通用於機構內健康醫療作業流程、跨機構之資訊互通、以及個人健康紀錄(PHR)之整合應用。針對特定之應用情境，可選用本網頁部分欄位，組合成標準病人基本資料，互通整合應用。</p>
+        <br>
+        <li class="introduction"><b>互通應用情境範例：</b></li>
+        <p>機構內系統整合: 病房護理資訊系統、檢驗檢查流程、心電圖檢查流程、影像檢查流程…</p>
+        <p>跨機構互通應用: 醫療轉介、健保及照護保險申報、研究及公衛資料收集(假名或匿名之病人基本資料)…</p>
+        <p>個人健康紀錄(PHR)之應用: 個人慢病管理、居家用藥記錄、雲端掛號及就醫諮詢…</p>
+        
         
         <br><hr>
         </div>
