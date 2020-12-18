@@ -36,149 +36,123 @@
         <h1>Example 1</h1>
         <div class="json">
         <pre>
-    {
-        "resourceType": "Bundle",
-        "id": "0915da6f-2baf-4c83-b7d1-d348b27d2e99",
-        "meta": {
-            "lastUpdated": "2020-10-16T08:40:26.301+08:00"
-        },
-        "type": "searchset",
-        "link": [
-          {
-            "relation": "self",
-             "url": "https://startfhir.dicom.org.tw/fhir/Patient"
+        {
+          "resourceType": "Patient",
+          "id": "X134216451",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2020-08-18T11:54:49.877+08:00",
+            "source": "#Q8kZrKZvnx9u1xUK"
           },
-          {
-            "relation": "next",
-            "url": "https://startfhir.dicom.org.tw/fhir?_getpages=0915da6f-2baf-4c83-b7d1-d348b27d2e99&_get
-    pagesoffset=20&_count=20&_pretty=true&_bundletype=searchset"
-          }
-        ],
-        "entry": [
-          {
-            "fullUrl": "https://startfhir.dicom.org.tw/fhir/Patient/X134216451",
-            "resource": {
-              "resourceType": "Patient",
-              "id": "X134216451",
-              "meta": {
-                "versionId": "1",
-                "lastUpdated": "2020-08-18T11:54:49.877+08:00",
-                "source": "#Q8kZrKZvnx9u1xUK"
-              },
-              "text": {
-                "status": "generated",
-                "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;div class=\"hapiHeaderText\"&gt;Sussy 
-                &lt;b&gt;JEREMIAH &lt;/b&gt;&lt;/div&gt;&lt;table class=\"hapiPropertyTable\"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Identifier&lt;/td&gt;
-                &lt;td&gt;AB40730323&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Address&lt;/td&gt;&lt;td&gt;&lt;span&gt;國興四街 42 號 &lt;/span&gt;&lt;br/&gt;&lt;span&gt;
-                花蓮市 &lt;/span&gt;&lt;span&gt;臺灣省 &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Date of birth&lt;/td&gt;&lt;td&gt;&lt;span&gt;21 Decem
-                ber 1993&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;"
-              },
-              "identifier": [
+          "text": {
+            "status": "generated",
+            "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;div class=\"hapiHeaderText\"&gt;Sussy 
+            &lt;b&gt;JEREMIAH &lt;/b&gt;&lt;/div&gt;&lt;table class=\"hapiPropertyTable\"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Identifier&lt;/td&gt;
+            &lt;td&gt;AB40730323&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Address&lt;/td&gt;&lt;td&gt;&lt;span&gt;國興四街 42 號 &lt;/span&gt;&lt;br/&gt;&lt;span&gt;
+            花蓮市 &lt;/span&gt;&lt;span&gt;臺灣省 &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Date of birth&lt;/td&gt;&lt;td&gt;&lt;span&gt;21 Decem
+            ber 1993&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;"
+          },
+          "identifier": [
+            {
+              "system": "https://www.dicom.org.tw/cs/passportNumber",
+              "value": "AB40730323"
+            },
+            {
+              "system": "https://www.dicom.org.tw/cs/ResidentNumber_tw",
+              "value": "UB77440430"
+            }
+          ],
+          "active": true,
+          "name": [
+            {
+              "text": "Sussy Jeremiah",
+              "family": "Jeremiah",
+              "given": [
+                "Sussy"
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "0938542901",
+              "use": "mobile"
+            },
+            {
+              "system": "email",
+              "value": "JD_0503@company.com"
+            },
+            {
+              "system": "url",
+              "value": "https://line.me/ti/p/debbie2385"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1993-12-21",
+          "address": [
+            {
+              "text": "970 臺灣省花蓮縣花蓮市國興四街 42 號",
+              "line": [
+                "國興四街 42 號"
+              ],
+              "city": "花蓮市",
+              "district": "花蓮縣",
+              "postalCode": "970",
+              "country": "臺灣省"
+            }
+          ],
+          "contact": [
+            {
+              "relationship": [
                 {
-                  "system": "https://www.dicom.org.tw/cs/passportNumber",
-                  "value": "AB40730323"
-                },
-                {
-                  "system": "https://www.dicom.org.tw/cs/ResidentNumber_tw",
-                  "value": "UB77440430"
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+                      "code": "N"
+                    }
+                  ],
+                  "text": "Next-of-Kin"
                 }
               ],
-              "active": true,
-              "name": [
-                {
-                  "text": "Sussy Jeremiah",
-                  "family": "Jeremiah",
-                  "given": [
-                    "Sussy"
-                  ]
-                }
-              ],
+              "name": {
+                "text": "Kimberly John",
+                "family": "John",
+                "given": [
+                  "Kimberly"
+                ]
+              },
               "telecom": [
                 {
                   "system": "phone",
-                  "value": "0938542901",
+                  "value": "0989278455",
                   "use": "mobile"
                 },
                 {
                   "system": "email",
-                  "value": "JD_0503@company.com"
+                  "value": "kimberly_gg@company.com"
                 },
                 {
                   "system": "url",
-                  "value": "https://line.me/ti/p/debbie2385"
+                  "value": "https://line.me/ti/p/kim2c384l5"
                 }
               ],
-              "gender": "female",
-              "birthDate": "1993-12-21",
-              "address": [
-                {
-                  "text": "970 臺灣省花蓮縣花蓮市國興四街 42 號",
-                  "line": [
-                    "國興四街 42 號"
-                  ],
-                  "city": "花蓮市",
-                  "district": "花蓮縣",
-                  "postalCode": "970",
-                  "country": "臺灣省"
-                }
-              ],
-              "contact": [
-                {
-                  "relationship": [
-                    {
-                      "coding": [
-                        {
-                          "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
-                          "code": "N"
-                        }
-                      ],
-                      "text": "Next-of-Kin"
-                    }
-                  ],
-                  "name": {
-                    "text": "Kimberly John",
-                    "family": "John",
-                    "given": [
-                      "Kimberly"
-                    ]
-                  },
-                  "telecom": [
-                    {
-                      "system": "phone",
-                      "value": "0989278455",
-                      "use": "mobile"
-                    },
-                    {
-                      "system": "email",
-                      "value": "kimberly_gg@company.com"
-                    },
-                    {
-                      "system": "url",
-                      "value": "https://line.me/ti/p/kim2c384l5"
-                    }
-                  ],
-                  "address": {
-                    "text": "970 臺灣省花蓮縣花蓮市國興四街 42 號",
-                    "line": [
-                      "國興四街 42 號"
-                    ],
-                    "city": "花蓮市",
-                    "district": "花蓮縣",
-                    "postalCode": "970",
-                    "country": "臺灣省"
-                  },
-                  "gender": "female"
-                }
-              ],
-              "managingOrganization": {
-                "reference": "Organization/MITW.ForContact"
-              }
-            },
-            "search": {
-              "mode": "match"
+              "address": {
+                "text": "970 臺灣省花蓮縣花蓮市國興四街 42 號",
+                "line": [
+                  "國興四街 42 號"
+                ],
+                "city": "花蓮市",
+                "district": "花蓮縣",
+                "postalCode": "970",
+                "country": "臺灣省"
+              },
+              "gender": "female"
             }
+          ],
+          "managingOrganization": {
+            "reference": "Organization/MITW.ForContact"
           }
-    }            
+        }      
         </pre>
         <hr>
         </div>
