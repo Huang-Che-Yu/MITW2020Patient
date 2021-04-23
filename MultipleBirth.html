@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MultipleBirth</title>
+        <style>
+            h1{
+                font-size: 70px;
+                text-align: center;
+                height: 50px;
+            }
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+            pre{
+                font-size: 20px;
+            }
+            div{
+                margin-left: 20%;
+                margin-right: 20%;
+                border-style: unset;
+
+            }
+            .url{
+                margin-left: 33%;
+                margin-right: 33%;
+                /* border-style: unset; */
+            }
+            li{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>MultipleBirth</h1>
+        <div>
+            
+        <p>病人是否為多胞胎其中之一。數值個數(0…1)，可不提供，或給定是否為多胞胎(true or false)或多胞胎中第幾個(正整數)。此欄位暫不考慮使用。 </p>
+        <hr>
+        <p>議題：</p>
+        <p>i.可與婦產科討論新生兒多胞胎之 patient name、identifier 表示方式。</p>  
+        <hr>
+        <h3>格式如下:</h3>
+     <pre>
+    "MultipleBirth":
+        {
+            "system": "https://www.hl7.org/fhir/patient-definitions.html#Patient.
+                       multipleBirth_x_",
+            "boolean" : true,
+            "value" : 3
+        }
+    
+    </pre>
+   <hr>
+        </div>
+    </body>
+</html>
