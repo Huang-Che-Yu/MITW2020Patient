@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <style>
+            h1{
+                font-size: 70px;
+                text-align: center;
+                height: 50px;
+            }
+            h3{
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+            }
+            pre{
+                font-size: 20px;
+            }
+            div{
+                margin-left: 20%;
+                margin-right: 20%;
+                border-style: unset;
+
+            }
+            .url{
+                margin-left: 33%;
+                margin-right: 33%;
+                /* border-style: unset; */
+            }
+            li{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>Contact</h1>
+        <div>
+            
+        
+        <p>病人之聯絡人。數值個數(0…n)，可不提供，或提供受病人信任的親友(如：監護人、伴侶或友人)或長期服務人員聯絡資訊。原 FHIR 規範可包含 relationship(與病人之關係)、name(姓名)、telecom(聯絡方式)、address(地址)、gender(性別)、organization(聯絡或服務人員所屬組織)、 period(可聯絡的期間)。name、telecom、address、gender 可資料格式可參考上列 patient resource 規範。其他建議使用欄位規格: </p>
+        <p> relationship：聯絡人與病人之關係。數值個數(0…n)，可不提供，或紀錄關係代碼。可能針對某些健康醫療照護，如手術同意、醫療費用處裡、照護服務、保險申請及給付等，會有不同之聯絡對象。關係代碼需進一步增修確認。 </p>
+        <p> organization：病人之聯絡人所屬組織。數值個數(0…1)，可不提供，或參考所屬組織。大型組織建議建立分層組織架構，病人通常連結到基層之聯絡組織與人員。</p>
+        <hr>
+        <p>議題：</p>
+        <p>i.relationship 的代碼及其中文說明須進一步確認	</p>
+        <p>ii.考慮上班及排班，醫療照護組織及人員的服務時間，無法以period 開始及結束時間表示。醫療照護人員的服務時間需另外的方式提供。</p>  
+ <hr>
+ <h3>格式如下:</h3>
+ <pre>
+    "contact": [
+            {
+              "relationship": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+                      "code": "N"
+                    }
+                  ],
+                  "text": "Next-of-Kin"
+                }
+              ],
+              "name": {
+                "text": "K****y John",
+                "family": "John",
+                "given": [
+                  "K****y"
+                ]
+              },
+              "telecom": [
+                {
+                  "system": "phone",
+                  "value": "09*****455",
+                  "use": "mobile"
+                },
+                {
+                  "system": "email",
+                  "value": "kimbe*****@company.com"
+                },
+                {
+                  "system": "url",
+                  "value": "https://line.me/ti/p/kim2c384l5"
+                }
+              ],
+              "address": {
+                "text": "970 臺灣省花蓮縣花蓮市***街 ** 號",
+                "line": [
+                  "***街 ** 號"
+                ],
+                "city": "花蓮市",
+                "district": "花蓮縣",
+                "postalCode": "970",
+                "country": "臺灣省"
+              },
+              "gender": "female"
+            }
+          ]
+ </pre>
+  <hr> 
+        </div>
+    </body>
+</html>
